@@ -17,7 +17,7 @@
 }
 
 .page-wrapper {
-  max-width: 1100px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 
@@ -44,20 +44,88 @@
 
 .category-card {
   height: 280px;
+  padding: 20px;
   border-radius: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .category-card__image {
   height: 100%;
   width: 100%;
-  border-radius: 30px;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  filter: brightness(0.5);
+}
+
+.category-card__info {
+  margin-top: auto;
+  color: #fff;
+  position: relative;
+  z-index: 5;
+}
+
+.category-card__title {
+  /* CHECK */
+  max-width: 300px;
+}
+
+.category-card__button {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #fff;
 }
 
 .landing-page__footer {
   display: flex;
   justify-content: center;
   padding: 0px 16px;
+}
+
+/* BUTTON STYLES */
+.button {
+  /* CHECK FONT WEIGHT */
+  border-radius: 30px;
+  padding: 12px 20px;
+  display: inline-block;
+  transition: background-color 0.4s ease;
+}
+
+.button--blue {
+  background-color: var(--blue-color);
+}
+
+.button--blue:hover {
+  background-color: var(--blue-color-secondary);
+}
+
+.button--yellow {
+  background-color: var(--yellow-color);
+}
+
+.button--yellow:hover {
+  background-color: var(--yellow-color-secondary);
+}
+
+.button--green {
+  background-color: var(--green-color);
+}
+
+.button--green:hover {
+  background-color: var(--green-color-secondary);
+}
+
+.button--purple {
+  background-color: var(--purple-color);
+}
+
+.button--purple:hover {
+  background-color: var(--purple-color-secondary);
 }
 
 /* MEDIA QUERIES */
