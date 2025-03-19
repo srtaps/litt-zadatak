@@ -102,7 +102,6 @@ a {
   display: flex;
   flex-wrap: wrap;
 }
-
 .main-footer__column {
   width: 33%;
 }
@@ -202,7 +201,8 @@ a {
   }
 
   #main-footer {
-    margin: 0 83px;
+    margin-left: 83px;
+    margin-right: 83px;
     padding: 30px;
   }
   .main-footer__column {
@@ -223,7 +223,7 @@ a {
     padding-right: 0px;
   }
 
-  .ml-80 {
+  #main-footer .ml-80 {
     margin-left: 0px;
   }
 }
@@ -238,7 +238,8 @@ a {
   }
 
   #main-footer {
-    margin: 0 91px;
+    max-width: 576px;
+    margin: auto auto 20px;
   }
 }
 
@@ -256,7 +257,8 @@ a {
   }
 
   #main-footer {
-    margin: 0 38px;
+    margin-left: 38px;
+    margin-right: 38px;
     padding: 30px;
   }
 }
