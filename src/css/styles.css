@@ -21,13 +21,13 @@ a {
   text-decoration: none;
 }
 
-.page-wrapper {
+.container {
   max-width: 1180px;
   margin: 0 auto;
 }
 
 /* LANDING PAGE */
-#landing-page .page-wrapper {
+#landing-page .container {
   padding-top: 40px;
   padding-bottom: 20px;
   min-height: 100vh;
