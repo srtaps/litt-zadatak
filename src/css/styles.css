@@ -168,6 +168,30 @@ a {
   margin-top: 10px;
 }
 
+/* BENEFITS */
+.benefits {
+  background-color: var(--purple-color-opacity);
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+.benefits .container {
+  display: flex;
+  column-gap: 65px;
+}
+.benefits__card {
+  flex: 1;
+  text-align: center;
+}
+.benefits__info {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 /* MAIN FOOTER */
 #main-footer {
   background-color: var(--footer-color);
@@ -280,6 +304,29 @@ a {
     height: 280px;
   }
 
+  .jobs {
+    padding-left: 83px;
+    padding-right: 83px;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .benefits .container {
+    max-width: 1180px;
+    padding-left: 83px;
+    padding-right: 83px;
+    flex-direction: column;
+    row-gap: 56px;
+  }
+  .benefits__card {
+    text-align: left;
+    display: flex;
+    column-gap: 30px;
+  }
+  .benefits__info {
+    margin-top: 0;
+  }
+
   #main-footer {
     margin-left: 83px;
     margin-right: 83px;
@@ -291,11 +338,17 @@ a {
   .main-footer__column {
     width: 100%;
   }
-  .main-footer__title {
+  .main-footer__column:not(:first-child) .main-footer__title {
     margin-top: 50px;
   }
   .main-footer__address {
     max-width: 300px;
+  }
+  .main-footer__phone {
+    padding-bottom: 0px;
+  }
+  .main-footer__list {
+    padding-bottom: 0px;
   }
   .main-footer__row {
     margin-top: 50px;
@@ -304,13 +357,6 @@ a {
   }
   .main-footer__socials {
     padding-right: 0px;
-  }
-
-  .jobs {
-    padding-left: 83px;
-    padding-right: 83px;
-    flex-direction: column;
-    row-gap: 50px;
   }
 }
 
@@ -323,14 +369,12 @@ a {
     height: 216px;
   }
 
-  #main-footer {
-    max-width: 576px;
-    margin: auto auto 20px;
+  .hero {
+    border-bottom-right-radius: 60px;
   }
 
   .jobs {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 100px 0;
     max-width: 580px;
   }
   .jobs__title-left,
@@ -338,6 +382,21 @@ a {
   .jobs__description,
   .jobs__title-right {
     text-align: center;
+  }
+
+  .benefits {
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+  .benefits .container {
+    max-width: 580px;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  #main-footer {
+    max-width: 580px;
+    margin: auto auto 20px;
   }
 }
 
@@ -360,19 +419,12 @@ a {
     max-width: 280px;
   }
 
-  #main-footer {
-    margin-left: 38px;
-    margin-right: 38px;
-    padding: 30px;
-  }
-
   .hero__buttons {
     flex-direction: column;
   }
 
   .jobs {
-    padding-left: 38px;
-    padding-right: 38px;
+    padding: 80px 38px;
   }
   .job__info {
     margin-top: 20px;
@@ -383,5 +435,11 @@ a {
   .display-block {
     margin-top: 10px;
     display: block;
+  }
+
+  #main-footer {
+    margin-left: 38px;
+    margin-right: 38px;
+    padding: 30px;
   }
 }
