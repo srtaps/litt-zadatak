@@ -82,9 +82,10 @@
 }
 
 .landing-page__footer {
+  margin: 0 auto;
+  text-align: center;
   display: flex;
   justify-content: center;
-  padding: 0px 16px;
 }
 
 /* BUTTON STYLES */
@@ -131,6 +132,7 @@
 /* MEDIA QUERIES */
 @media (max-width: 1220px) {
   .landing-page__categories {
+    margin: 40px 0;
     grid-template-columns: 1fr;
     padding: 0 83px;
   }
@@ -157,5 +159,9 @@
 
   .category-card {
     height: 167px;
+  }
+
+  .landing-page__footer {
+    max-width: 300px;
   }
 }
