@@ -207,6 +207,15 @@ a {
   margin-top: 30px;
 }
 
+/* JOB CTA */
+.job-cta {
+  padding-bottom: 160px;
+  text-align: center;
+}
+.job-cta__text {
+  margin-top: 30px;
+}
+
 /* MAIN FOOTER */
 #main-footer {
   background-color: var(--footer-color);
