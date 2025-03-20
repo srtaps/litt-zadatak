@@ -219,10 +219,23 @@ a {
 /* STICKY CONTACT */
 .sticky-container {
   position: sticky;
-  bottom: 100px;
+  bottom: 36px;
   padding: 10px 0;
   margin-top: 50px;
   margin-bottom: 20px;
+}
+.contact-button {
+  margin-left: auto;
+  height: 48px;
+  width: 48px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  display: block;
+}
+#scroll-top {
+  margin-top: 28px;
 }
 
 /* MAIN FOOTER */
