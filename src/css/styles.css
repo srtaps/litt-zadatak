@@ -108,8 +108,12 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.hero__title {
+  text-align: center;
+}
 .hero__subtitle {
   margin-top: 50px;
+  text-align: center;
 }
 .hero__buttons {
   margin-top: 50px;
@@ -190,6 +194,11 @@ a {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+/* RECRUITMENT NEEDS */
+.recruitment__text {
+  margin-top: 30px;
 }
 
 /* MAIN FOOTER */
@@ -288,9 +297,6 @@ a {
 }
 
 /* UTILITY */
-.text-center {
-  text-align: center;
-}
 
 /* MEDIA QUERIES */
 @media (max-width: 1220px) {
