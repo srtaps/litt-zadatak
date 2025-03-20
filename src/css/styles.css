@@ -111,7 +111,7 @@ a {
   text-align: center;
 }
 .hero__subtitle {
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: center;
 }
 .hero__buttons {
@@ -210,11 +210,19 @@ a {
 
 /* JOB CTA */
 .job-cta {
-  padding-bottom: 160px;
   text-align: center;
 }
 .job-cta__text {
   margin-top: 30px;
+}
+
+/* STICKY CONTACT */
+.sticky-container {
+  position: sticky;
+  bottom: 100px;
+  padding: 10px 0;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 /* MAIN FOOTER */
@@ -360,6 +368,11 @@ a {
     padding-right: 83px;
   }
 
+  .sticky-container {
+    padding-left: 83px;
+    padding-right: 83px;
+  }
+
   #main-footer {
     margin-left: 83px;
     margin-right: 83px;
@@ -406,6 +419,12 @@ a {
   .hero {
     border-bottom-right-radius: 60px;
   }
+  .hero__container {
+    width: 580px;
+  }
+  .hero__subtitle {
+    margin-top: 24px;
+  }
 
   .jobs {
     padding: 100px 0;
@@ -442,6 +461,10 @@ a {
     padding-right: 0;
   }
 
+  .sticky-container {
+    max-width: 580px;
+  }
+
   #main-footer {
     max-width: 580px;
     margin: auto auto 20px;
@@ -467,7 +490,18 @@ a {
     max-width: 280px;
   }
 
+  .hero__container {
+    padding-left: 38px;
+    padding-right: 38px;
+    width: 100%;
+  }
+  .hero__subtitle {
+    margin-top: 20px;
+  }
   .hero__buttons {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: column;
   }
 
@@ -490,6 +524,11 @@ a {
   }
 
   .job-cta {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  .sticky-container {
     padding-left: 38px;
     padding-right: 38px;
   }
