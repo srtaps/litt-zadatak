@@ -220,6 +220,8 @@ a {
   text-align: center;
 }
 .benefits__icon svg {
+  width: 72px;
+  height: 72px;
 }
 .benefits__info {
   margin-top: 30px;
@@ -256,7 +258,7 @@ a {
 }
 
 /* STICKY CONTACT */
-.sticky-container {
+.sticky-contact {
   position: sticky;
   bottom: 36px;
   padding: 10px 0;
@@ -432,7 +434,7 @@ a {
     padding-right: var(--padding-landscape);
   }
 
-  .sticky-container {
+  .sticky-contact {
     padding-left: var(--padding-landscape);
     padding-right: var(--padding-landscape);
   }
@@ -530,7 +532,7 @@ a {
     padding-right: 0;
   }
 
-  .sticky-container {
+  .sticky-contact {
     max-width: 580px;
   }
 
@@ -601,7 +603,7 @@ a {
     padding-right: var(--padding-mobile);
   }
 
-  .sticky-container {
+  .sticky-contact {
     padding-left: var(--padding-mobile);
     padding-right: var(--padding-mobile);
   }
