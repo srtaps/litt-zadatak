@@ -8,7 +8,10 @@
   --blue-color-secondary: #1269b9;
   --green-color: #1a7717;
   --green-color-secondary: #0a5508;
+  --header-color-opacity: rgba(255, 255, 255, 0.9);
   --footer-color: #1a1a1a;
+  --padding-landscape: 83px;
+  --padding-mobile: 38px;
 }
 
 * {
@@ -84,6 +87,34 @@ a {
   text-align: center;
   display: flex;
   justify-content: center;
+}
+
+/* MAIN HEADER */
+.main-header {
+  height: 0;
+  overflow: visible;
+  position: sticky;
+  top: 36px;
+  z-index: 20;
+}
+.main-header__wrapper {
+  background-color: var(--header-color-opacity);
+  padding: 8px 20px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+}
+.nav {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
 }
 
 /* HERO SECTION */
@@ -187,6 +218,8 @@ a {
 .benefits__card {
   flex: 1;
   text-align: center;
+}
+.benefits__icon svg {
 }
 .benefits__info {
   margin-top: 30px;
@@ -341,6 +374,9 @@ a {
 }
 
 /* UTILITY */
+.icon--purple {
+  fill: var(--purple-color);
+}
 
 /* MEDIA QUERIES */
 @media (max-width: 1220px) {
@@ -354,17 +390,22 @@ a {
     height: 280px;
   }
 
+  .main-header {
+    padding-left: var(--padding-landscape);
+    padding-right: var(--padding-landscape);
+  }
+
   .jobs {
-    padding-left: 83px;
-    padding-right: 83px;
+    padding-left: var(--padding-landscape);
+    padding-right: var(--padding-landscape);
     flex-direction: column;
     row-gap: 50px;
   }
 
   .benefits .container {
     max-width: 1180px;
-    padding-left: 83px;
-    padding-right: 83px;
+    padding-left: var(--padding-landscape);
+    padding-right: var(--padding-landscape);
     flex-direction: column;
     row-gap: 56px;
   }
@@ -373,28 +414,32 @@ a {
     display: flex;
     column-gap: 30px;
   }
+  .benefits__icon svg {
+    height: 52px;
+    width: 52px;
+  }
   .benefits__info {
     margin-top: 0;
   }
 
   .recruitment {
-    padding-left: 83px;
-    padding-right: 83px;
+    padding-left: var(--padding-landscape);
+    padding-right: var(--padding-landscape);
   }
 
   .job-cta {
-    padding-left: 83px;
-    padding-right: 83px;
+    padding-left: var(--padding-landscape);
+    padding-right: var(--padding-landscape);
   }
 
   .sticky-container {
-    padding-left: 83px;
-    padding-right: 83px;
+    padding-left: var(--padding-landscape);
+    padding-right: var(--padding-landscape);
   }
 
   #main-footer {
-    margin-left: 83px;
-    margin-right: 83px;
+    margin-left: var(--padding-landscape);
+    margin-right: var(--padding-landscape);
     padding: 30px;
   }
   .main-footer__column {
@@ -433,6 +478,11 @@ a {
 
   .category-card {
     height: 216px;
+  }
+
+  .main-header {
+    max-width: 580px;
+    padding: 0;
   }
 
   .hero {
@@ -492,7 +542,7 @@ a {
 
 @media (max-width: 580px) {
   .landing-page__categories {
-    padding: 0 38px;
+    padding: 0 var(--padding-mobile);
     justify-content: center;
   }
 
@@ -509,9 +559,13 @@ a {
     max-width: 280px;
   }
 
+  .main-header {
+    padding: 0 var(--padding-mobile);
+  }
+
   .hero__container {
-    padding-left: 38px;
-    padding-right: 38px;
+    padding-left: var(--padding-mobile);
+    padding-right: var(--padding-mobile);
     width: 100%;
   }
   .hero__subtitle {
@@ -525,7 +579,7 @@ a {
   }
 
   .jobs {
-    padding: 80px 38px;
+    padding: 80px var(--padding-mobile);
   }
   .job__info {
     margin-top: 20px;
@@ -539,22 +593,22 @@ a {
   }
 
   .recruitment {
-    padding: 80px 38px;
+    padding: 80px var(--padding-mobile);
   }
 
   .job-cta {
-    padding-left: 38px;
-    padding-right: 38px;
+    padding-left: var(--padding-mobile);
+    padding-right: var(--padding-mobile);
   }
 
   .sticky-container {
-    padding-left: 38px;
-    padding-right: 38px;
+    padding-left: var(--padding-mobile);
+    padding-right: var(--padding-mobile);
   }
 
   #main-footer {
-    margin-left: 38px;
-    margin-right: 38px;
+    margin-left: var(--padding-mobile);
+    margin-right: var(--padding-mobile);
     padding: 30px;
   }
 }
