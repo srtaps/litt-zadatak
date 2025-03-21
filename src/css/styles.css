@@ -551,7 +551,6 @@ button {
   }
 
   .benefits .container {
-    max-width: 1180px;
     padding-left: var(--padding-landscape);
     padding-right: var(--padding-landscape);
     flex-direction: column;
