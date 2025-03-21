@@ -28,13 +28,33 @@
   --blue-color-secondary: #1269b9;
   --green-color: #1a7717;
   --green-color-secondary: #0a5508;
+  --gray-color-1: #1a1a1a;
+  --gray-color-2: #444;
   --header-color-opacity: rgba(255, 255, 255, 0.9);
   --footer-color: #1a1a1a;
-  --padding-landscape: 83p x;
+  --padding-landscape: 83px;
   --padding-mobile: 38px;
   --font-size-button: 18px;
-  --font-size-button-m: 16px;
   --font-weight-button: 500;
+  --font-size-nav: 20px;
+  --font-weight-nav: 500;
+  --font-size-hero-title: 48px;
+  --font-size-hero-title-t: 32px;
+  --font-size-hero-title-m: 24px;
+  --font-weight-hero-title: 600;
+  --font-size-hero-subtitle: 48px;
+  --font-size-hero-subtitle-t: 32px;
+  --font-size-hero-subtitle-m: 20px;
+  --font-weight-hero-subtitle: 400;
+  --font-size-footer-title: 24px;
+  --font-weight-footer-title: 600;
+  --font-size-section-title: 64px;
+  --font-size-section-title-t: 48px;
+  --font-size-section-title-m: 36px;
+  --font-size-section_title_2: 36px;
+  --font-size-section_title_2-m: 24px;
+  --font-size-section-text: 20px;
+  --font-size-section-text-m: 16px;
 }
 
 /* RESET */
@@ -42,7 +62,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 a {
@@ -60,11 +79,91 @@ button {
   margin: 0 auto;
 }
 
+.text--gray-1 {
+  color: var(--gray-color-1);
+}
+.text--gray-2 {
+  color: var(--gray-color-2);
+}
+.text--purple {
+  color: var(--purple-color);
+}
+.text-hover--purple:hover {
+  color: var(--purple-color-secondary);
+}
+
+.section-label {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.section-title {
+  font-family: "Alice", serif;
+  font-size: var(--font-size-section-title);
+  font-weight: 400;
+  color: var(--gray-color-1);
+}
+.section-title-2 {
+  font-family: "Alice", serif;
+  font-size: var(--font-size-section_title_2);
+  font-weight: 400;
+  color: var(--gray-color-2);
+}
+.section-text {
+  font-family: "Work Sans", sans-serif;
+  font-size: var(--font-size-section-text);
+  font-weight: 400;
+  color: var(--gray-color-2);
+  line-height: 1.5;
+}
+
 .icon--white {
   fill: #fff;
 }
 .icon--purple {
   fill: var(--purple-color);
+}
+
+/* BUTTON STYLES */
+.button {
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: var(--font-weight-button);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 30px;
+  display: inline-block;
+  transition: background-color 0.4s ease;
+}
+
+.button--blue {
+  background-color: var(--blue-color);
+}
+.button--blue:hover {
+  background-color: var(--blue-color-secondary);
+}
+
+.button--yellow {
+  background-color: var(--yellow-color);
+}
+.button--yellow:hover {
+  background-color: var(--yellow-color-secondary);
+}
+
+.button--green {
+  background-color: var(--green-color);
+}
+.button--green:hover {
+  background-color: var(--green-color-secondary);
+}
+
+.button--purple {
+  background-color: var(--purple-color);
+}
+.button--purple:hover {
+  background-color: var(--purple-color-secondary);
 }
 
 /* LANDING PAGE */
@@ -147,11 +246,23 @@ button {
   margin-top: auto;
   margin-bottom: auto;
 }
-.nav-links {
+.nav__links {
   list-style: none;
   display: flex;
   align-items: center;
   column-gap: 40px;
+}
+.nav__link {
+  font-family: "Work Sans", sans-serif;
+  font-size: var(--font-size-nav);
+  font-weight: var(--font-weight-nav);
+  transition: 0.5s color;
+}
+.active-nav {
+  font-weight: 700;
+}
+.button.nav__link {
+  color: #fff;
 }
 .nav-mobile {
   display: none;
@@ -180,6 +291,7 @@ button {
 }
 .hero__container {
   max-width: 780px;
+  width: 100%;
   color: #fff;
   position: absolute;
   top: 50%;
@@ -187,9 +299,15 @@ button {
   transform: translate(-50%, -50%);
 }
 .hero__title {
+  font-family: "Work Sans", sans-serif;
+  font-size: var(--font-size-hero-title);
+  font-weight: var(--font-weight-hero-title);
   text-align: center;
 }
 .hero__subtitle {
+  font-family: "Work Sans", sans-serif;
+  font-size: var(--font-size-hero-subtitle);
+  font-weight: var(--font-weight-hero-subtitle);
   margin-top: 30px;
   text-align: center;
 }
@@ -241,13 +359,20 @@ button {
   background-color: var(--purple-color-opacity);
 }
 .job__position {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--gray-color-1);
   transition: all 0.7s;
 }
 .job:hover .job__position {
   color: var(--purple-color);
 }
 .job__info {
-  margin-top: 10px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  color: var(--gray-color-2);
+  margin-top: 12px;
 }
 
 /* BENEFITS */
@@ -288,7 +413,7 @@ button {
   max-width: 780px;
   width: 100%;
   border-radius: 30px 0;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .recruitment__text {
   margin-top: 30px;
@@ -327,6 +452,8 @@ button {
 
 /* MAIN FOOTER */
 #main-footer {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
   background-color: var(--footer-color);
   padding: 50px 100px 35px;
   margin-bottom: 30px;
@@ -342,15 +469,18 @@ button {
 .main-footer__column:nth-child(n + 2) .main-footer__list {
   margin-left: 80px;
 }
-
+.main-footer__title {
+  font-size: var(--font-size-footer-title);
+  font-weight: var(--font-weight-footer-title);
+}
 .main-footer__address {
+  line-height: 1.6;
   margin-top: 30px;
 }
 .main-footer__phone {
   margin-top: 30px;
   padding-bottom: 30px;
 }
-
 .main-footer__list {
   list-style: none;
   padding-bottom: 30px;
@@ -361,7 +491,6 @@ button {
 .main-footer__list a {
   color: #fff;
 }
-
 .main-footer__row {
   border-top: 1px solid #444;
   width: 100%;
@@ -384,43 +513,6 @@ button {
   height: 32px;
 }
 
-/* BUTTON STYLES */
-.button {
-  color: #fff;
-  border-radius: 30px;
-  padding: 12px 20px;
-  display: inline-block;
-  transition: background-color 0.4s ease;
-}
-
-.button--blue {
-  background-color: var(--blue-color);
-}
-.button--blue:hover {
-  background-color: var(--blue-color-secondary);
-}
-
-.button--yellow {
-  background-color: var(--yellow-color);
-}
-.button--yellow:hover {
-  background-color: var(--yellow-color-secondary);
-}
-
-.button--green {
-  background-color: var(--green-color);
-}
-.button--green:hover {
-  background-color: var(--green-color-secondary);
-}
-
-.button--purple {
-  background-color: var(--purple-color);
-}
-.button--purple:hover {
-  background-color: var(--purple-color-secondary);
-}
-
 /* MEDIA QUERIES */
 @media (max-width: 1220px) {
   .landing-page__categories {
@@ -437,7 +529,7 @@ button {
     padding-left: var(--padding-landscape);
     padding-right: var(--padding-landscape);
   }
-  .nav-links {
+  .nav__links {
     display: none;
   }
   .nav-mobile {
@@ -521,6 +613,16 @@ button {
 }
 
 @media (max-width: 768px) {
+  .section-label {
+    font-size: 16px;
+  }
+  .section-title {
+    font-size: var(--font-size-section-title-t);
+  }
+  .section-text {
+    font-size: var(--font-size-section-text-m);
+  }
+
   .landing-page__categories {
     max-width: 100%;
   }
@@ -540,7 +642,11 @@ button {
   .hero__container {
     width: 580px;
   }
+  .hero__title {
+    font-size: var(--font-size-hero-title-t);
+  }
   .hero__subtitle {
+    font-size: var(--font-size-hero-subtitle-t);
     margin-top: 24px;
   }
 
@@ -561,16 +667,16 @@ button {
   }
   .benefits .container {
     max-width: 580px;
-    padding-left: 38px;
-    padding-right: 38px;
+    padding-left: var(--padding-mobile);
+    padding-right: var(--padding-mobile);
+  }
+  .benefits__info {
+    gap: 20px;
   }
 
   .recruitment {
     max-width: 580px;
-    padding-top: 150px;
-    padding-bottom: 100px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 150px 0 100px 0;
   }
 
   .job-cta {
@@ -590,14 +696,24 @@ button {
 }
 
 @media (max-width: 580px) {
+  .section-title {
+    font-size: var(--font-size-section-title-m);
+  }
+  .section-title-2 {
+    font-size: var(--font-size-section_title_2-m);
+  }
+  .section-text {
+    font-size: var(--font-size-section-text-m);
+  }
+
   .landing-page__categories {
     padding: 0 var(--padding-mobile);
     justify-content: center;
   }
 
   .category-card {
-    height: 167px;
-    min-width: 202px;
+    height: 168px;
+    min-width: 200px;
     padding: 10px;
   }
   .category-card__button {
@@ -620,7 +736,11 @@ button {
     padding-right: var(--padding-mobile);
     width: 100%;
   }
+  .hero__title {
+    font-size: var(--font-size-hero-title-m);
+  }
   .hero__subtitle {
+    font-size: var(--font-size-hero-subtitle-m);
     margin-top: 20px;
   }
   .hero__buttons {
@@ -642,6 +762,13 @@ button {
   .display-block {
     margin-top: 10px;
     display: block;
+  }
+
+  .benefits__card {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 
   .recruitment {
