@@ -116,6 +116,19 @@ a {
   align-items: center;
   column-gap: 40px;
 }
+.nav-mobile {
+  display: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+}
+.nav-mobile svg {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
 
 /* HERO SECTION */
 .hero {
@@ -376,6 +389,10 @@ a {
 }
 
 /* UTILITY */
+
+.icon--white {
+  fill: #fff;
+}
 .icon--purple {
   fill: var(--purple-color);
 }
@@ -395,6 +412,12 @@ a {
   .main-header {
     padding-left: var(--padding-landscape);
     padding-right: var(--padding-landscape);
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-mobile {
+    display: block;
   }
 
   .jobs {
@@ -563,6 +586,9 @@ a {
 
   .main-header {
     padding: 0 var(--padding-mobile);
+  }
+  .main-header__wrapper {
+    padding: 8px 12px;
   }
 
   .hero__container {
