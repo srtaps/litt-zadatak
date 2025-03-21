@@ -34,27 +34,27 @@
   --footer-color: #1a1a1a;
   --padding-landscape: 83px;
   --padding-mobile: 38px;
-  --font-size-button: 18px;
-  --font-weight-button: 500;
-  --font-size-nav: 20px;
-  --font-weight-nav: 500;
-  --font-size-hero-title: 48px;
-  --font-size-hero-title-t: 32px;
-  --font-size-hero-title-m: 24px;
-  --font-weight-hero-title: 600;
-  --font-size-hero-subtitle: 48px;
-  --font-size-hero-subtitle-t: 32px;
-  --font-size-hero-subtitle-m: 20px;
-  --font-weight-hero-subtitle: 400;
-  --font-size-footer-title: 24px;
-  --font-weight-footer-title: 600;
-  --font-size-section-title: 64px;
-  --font-size-section-title-t: 48px;
-  --font-size-section-title-m: 36px;
-  --font-size-section_title_2: 36px;
-  --font-size-section_title_2-m: 24px;
-  --font-size-section-text: 20px;
-  --font-size-section-text-m: 16px;
+  --font_size-button: 18px;
+  --font_weight-button: 500;
+  --font_size-nav: 20px;
+  --font_weight-nav: 500;
+  --font_size-hero_title: 48px;
+  --font_size-hero_title-t: 32px;
+  --font_size-hero_title-m: 24px;
+  --font_weight-hero_title: 600;
+  --font_size-hero_subtitle: 48px;
+  --font_size-hero_subtitle-t: 32px;
+  --font_size-hero_subtitle-m: 20px;
+  --font_weight-hero_subtitle: 400;
+  --font_size-footer_title: 24px;
+  --font_weight-footer_title: 600;
+  --font_size-section_title: 64px;
+  --font_size-section_title-t: 48px;
+  --font_size-section_title-m: 36px;
+  --font_size-section_title_2: 36px;
+  --font_size-section_title_2-m: 24px;
+  --font_size-section_text: 20px;
+  --font_size-section_text-m: 16px;
 }
 
 /* RESET */
@@ -101,19 +101,19 @@ button {
 }
 .section-title {
   font-family: "Alice", serif;
-  font-size: var(--font-size-section-title);
+  font-size: var(--font_size-section_title);
   font-weight: 400;
   color: var(--gray-color-1);
 }
 .section-title-2 {
   font-family: "Alice", serif;
-  font-size: var(--font-size-section_title_2);
+  font-size: var(--font_size-section_title_2);
   font-weight: 400;
   color: var(--gray-color-2);
 }
 .section-text {
   font-family: "Work Sans", sans-serif;
-  font-size: var(--font-size-section-text);
+  font-size: var(--font_size-section_text);
   font-weight: 400;
   color: var(--gray-color-2);
   line-height: 1.5;
@@ -130,7 +130,7 @@ button {
 .button {
   font-family: "Work Sans", sans-serif;
   font-size: 18px;
-  font-weight: var(--font-weight-button);
+  font-weight: var(--font_weight-button);
   color: #fff;
   padding: 12px 20px;
   border-radius: 30px;
@@ -254,8 +254,8 @@ button {
 }
 .nav__link {
   font-family: "Work Sans", sans-serif;
-  font-size: var(--font-size-nav);
-  font-weight: var(--font-weight-nav);
+  font-size: var(--font_size-nav);
+  font-weight: var(--font_weight-nav);
   transition: 0.5s color;
 }
 .active-nav {
@@ -300,14 +300,14 @@ button {
 }
 .hero__title {
   font-family: "Work Sans", sans-serif;
-  font-size: var(--font-size-hero-title);
-  font-weight: var(--font-weight-hero-title);
+  font-size: var(--font_size-hero_title);
+  font-weight: var(--font_weight-hero_title);
   text-align: center;
 }
 .hero__subtitle {
   font-family: "Work Sans", sans-serif;
-  font-size: var(--font-size-hero-subtitle);
-  font-weight: var(--font-weight-hero-subtitle);
+  font-size: var(--font_size-hero_subtitle);
+  font-weight: var(--font_weight-hero_subtitle);
   margin-top: 30px;
   text-align: center;
 }
@@ -470,8 +470,8 @@ button {
   margin-left: 80px;
 }
 .main-footer__title {
-  font-size: var(--font-size-footer-title);
-  font-weight: var(--font-weight-footer-title);
+  font-size: var(--font_size-footer_title);
+  font-weight: var(--font_weight-footer_title);
 }
 .main-footer__address {
   line-height: 1.6;
@@ -617,10 +617,10 @@ button {
     font-size: 16px;
   }
   .section-title {
-    font-size: var(--font-size-section-title-t);
+    font-size: var(--font_size-section_title-t);
   }
   .section-text {
-    font-size: var(--font-size-section-text-m);
+    font-size: var(--font_size-section_text-m);
   }
 
   .landing-page__categories {
@@ -643,10 +643,10 @@ button {
     width: 580px;
   }
   .hero__title {
-    font-size: var(--font-size-hero-title-t);
+    font-size: var(--font_size-hero_title-t);
   }
   .hero__subtitle {
-    font-size: var(--font-size-hero-subtitle-t);
+    font-size: var(--font_size-hero_subtitle-t);
     margin-top: 24px;
   }
 
@@ -697,13 +697,13 @@ button {
 
 @media (max-width: 580px) {
   .section-title {
-    font-size: var(--font-size-section-title-m);
+    font-size: var(--font_size-section_title-m);
   }
   .section-title-2 {
-    font-size: var(--font-size-section_title_2-m);
+    font-size: var(--font_size-section_title_2-m);
   }
   .section-text {
-    font-size: var(--font-size-section-text-m);
+    font-size: var(--font_size-section_text-m);
   }
 
   .landing-page__categories {
@@ -737,10 +737,10 @@ button {
     width: 100%;
   }
   .hero__title {
-    font-size: var(--font-size-hero-title-m);
+    font-size: var(--font_size-hero_title-m);
   }
   .hero__subtitle {
-    font-size: var(--font-size-hero-subtitle-m);
+    font-size: var(--font_size-hero_subtitle-m);
     margin-top: 20px;
   }
   .hero__buttons {
