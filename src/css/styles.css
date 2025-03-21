@@ -30,8 +30,11 @@
   --green-color-secondary: #0a5508;
   --header-color-opacity: rgba(255, 255, 255, 0.9);
   --footer-color: #1a1a1a;
-  --padding-landscape: 83px;
+  --padding-landscape: 83p x;
   --padding-mobile: 38px;
+  --font-size-button: 18px;
+  --font-size-button-m: 16px;
+  --font-weight-button: 500;
 }
 
 /* RESET */
@@ -546,7 +549,7 @@ button {
     max-width: 580px;
   }
   .jobs__title-left,
-  .jobs__subtitle,
+  .jobs__label,
   .jobs__description,
   .jobs__title-right {
     text-align: center;
