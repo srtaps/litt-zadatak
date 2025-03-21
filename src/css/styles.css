@@ -34,6 +34,8 @@
   --footer-color: #1a1a1a;
   --padding-landscape: 83px;
   --padding-mobile: 38px;
+  --font_size-cat_card: 40px;
+  --font_size-cat_card-t: 24px;
   --font_size-button: 18px;
   --font_weight-button: 500;
   --font_size-nav: 20px;
@@ -167,6 +169,9 @@ button {
 }
 
 /* LANDING PAGE */
+#landing-page {
+  font-family: "Work Sans", sans-serif;
+}
 #landing-page .container {
   padding-top: 40px;
   padding-bottom: 20px;
@@ -211,7 +216,8 @@ button {
   z-index: 5;
 }
 .category-card__title {
-  /* CHECK */
+  font-size: var(--font_size-cat_card);
+  font-weight: 500;
   max-width: 300px;
 }
 .category-card__button {
@@ -219,8 +225,9 @@ button {
 }
 
 .landing-page__footer {
-  margin: 0 auto;
+  color: var(--gray-color-2);
   text-align: center;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
 }
@@ -630,6 +637,9 @@ button {
   .category-card {
     height: 216px;
   }
+  .category-card__title {
+    font-size: var(--font_size-cat_card-t);
+  }
 
   .main-header {
     max-width: 580px;
@@ -720,10 +730,6 @@ button {
     margin-top: 10px;
   }
 
-  .landing-page__footer {
-    max-width: 280px;
-  }
-
   .main-header {
     padding: 0 var(--padding-mobile);
   }
@@ -754,6 +760,7 @@ button {
     padding: 80px var(--padding-mobile);
   }
   .job__info {
+    font-size: 16px;
     margin-top: 20px;
   }
   .separator {
