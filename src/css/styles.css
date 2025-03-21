@@ -73,6 +73,7 @@ a {
 button {
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 /* UTILITY */
@@ -450,7 +451,6 @@ button {
   height: 48px;
   width: 48px;
   border-radius: 50%;
-  cursor: pointer;
   display: block;
 }
 #scroll-top {
