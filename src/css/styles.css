@@ -1,3 +1,23 @@
+/* FONT */
+@font-face {
+  font-family: "Hammersmith One";
+  src: url("../fonts/HammersmithOne-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Alice";
+  src: url("../fonts/Alice-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/WorkSans-Variable.ttf") format("truetype-variations");
+  font-weight: 400 500 600 700;
+}
+
+/* VARIABLES */
 :root {
   --yellow-color: #be9e44;
   --yellow-color-secondary: #a57e13;
@@ -14,6 +34,7 @@
   --padding-mobile: 38px;
 }
 
+/* RESET */
 * {
   padding: 0;
   margin: 0;
