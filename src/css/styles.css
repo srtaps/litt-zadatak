@@ -241,7 +241,7 @@ button {
   top: 36px;
   z-index: 20;
 }
-.main-header__wrapper {
+.main-header > .container {
   background-color: var(--header-color-opacity);
   padding: 8px 20px;
   border-radius: 100px;
@@ -536,11 +536,37 @@ button {
     padding-left: var(--padding-landscape);
     padding-right: var(--padding-landscape);
   }
+  .main-header__left {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  body.no-scroll {
+    position: fixed;
+  }
   .nav__links {
     display: none;
   }
   .nav-mobile {
     display: block;
+  }
+  /* When mobile navigation is open */
+  .main-header.active-menu {
+    height: 100vh;
+    background-color: #fff;
+    width: 100%;
+    padding: 36px 0;
+    top: 0;
+  }
+  .main-header.active-menu > .container {
+    background-color: #fff;
+    padding: 8px 90px;
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: none;
   }
 
   .jobs {
@@ -641,8 +667,13 @@ button {
   }
 
   .main-header {
-    max-width: 580px;
     padding: 0;
+  }
+  .main-header > .container {
+    max-width: 580px;
+  }
+  .main-header.active-menu > .container {
+    padding: 8px 20px;
   }
 
   .hero {
@@ -696,6 +727,8 @@ button {
 
   .sticky-contact {
     max-width: 580px;
+    padding-left: 0;
+    padding-right: 8px;
   }
 
   #main-footer {
@@ -732,8 +765,12 @@ button {
   .main-header {
     padding: 0 var(--padding-mobile);
   }
-  .main-header__wrapper {
+  .main-header > .container {
     padding: 8px 12px;
+    border-radius: 40px;
+  }
+  .main-header.active-menu > .container {
+    padding: 8px 50px;
   }
 
   .hero__container {
