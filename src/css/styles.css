@@ -121,6 +121,10 @@ button {
   color: var(--gray-color-2);
   line-height: 1.5;
 }
+.section-button {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .icon--white {
   fill: #fff;
@@ -137,8 +141,15 @@ button {
   color: #fff;
   padding: 12px 20px;
   border-radius: 30px;
-  display: inline-block;
+  display: flex;
+  gap: 16px;
+  max-width: fit-content;
+  align-items: center;
   transition: background-color 0.4s ease;
+}
+.button-icon svg {
+  width: 20px;
+  height: 16px;
 }
 
 .button--blue {
@@ -227,8 +238,9 @@ button {
 
 .landing-page__footer {
   color: var(--gray-color-2);
-  text-align: center;
   margin: 0 auto;
+  padding: 8px;
+  text-align: center;
   display: flex;
   justify-content: center;
 }
