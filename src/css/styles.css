@@ -565,8 +565,23 @@ button {
     background-color: #fff;
     padding: 8px 90px;
     border-radius: 0;
+    flex-direction: column;
+    justify-content: space-between;
     box-shadow: none;
     backdrop-filter: none;
+  }
+  .main-header.active-menu .nav {
+    padding: 64px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  .main-header.active-menu .nav__links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+  }
+  .main-header.active-menu .nav__link {
+    font-size: 24px;
   }
 
   .jobs {
