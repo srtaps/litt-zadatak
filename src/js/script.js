@@ -1,5 +1,12 @@
-const mobileMenu = document.getElementById("open-menu");
+const mainHeader = document.getElementById("header");
+const toggleMenuButton = document.getElementById("open-menu");
+const hamburgerIcon = document.querySelector("#open-menu svg");
+const closeIcon = document.querySelector("#open-menu p");
 
-mobileMenu.addEventListener("click", (e) => {
+toggleMenuButton.addEventListener("click", (e) => {
   e.preventDefault();
+
+  mainHeader.classList.toggle("active-menu");
+  hamburgerIcon.classList.toggle("hide");
+  closeIcon.classList.toggle("hide");
 });

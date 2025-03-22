@@ -77,6 +77,10 @@ button {
 }
 
 /* UTILITY */
+.hide {
+  display: none;
+}
+
 .container {
   max-width: 1180px;
   margin: 0 auto;
@@ -247,9 +251,8 @@ button {
 
 /* MAIN HEADER */
 .main-header {
-  height: 0;
-  overflow: visible;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 36px;
   z-index: 20;
 }
@@ -278,6 +281,18 @@ button {
   font-weight: var(--font_weight-nav);
   transition: 0.5s color;
 }
+.nav__buttons {
+  margin-top: 64px;
+  padding-top: 64px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.nav__buttons .button {
+  font-size: 20px;
+}
 .active-nav {
   font-weight: 700;
 }
@@ -294,6 +309,12 @@ button {
   width: 24px;
   height: 24px;
   vertical-align: middle;
+}
+.nav-close {
+  font-family: "Work Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
 }
 
 /* HERO SECTION */
@@ -556,10 +577,10 @@ button {
     justify-content: space-between;
     gap: 8px;
   }
-  body.no-scroll {
+  /* body.no-scroll {
     position: fixed;
-  }
-  .nav__links {
+  } */
+  .nav {
     display: none;
   }
   .nav-mobile {
@@ -570,21 +591,20 @@ button {
     height: 100vh;
     background-color: #fff;
     width: 100%;
-    padding: 36px 0;
+    padding: 36px 16px;
     top: 0;
   }
   .main-header.active-menu > .container {
     background-color: #fff;
-    padding: 8px 90px;
-    border-radius: 0;
+    padding: 8px 87px;
     flex-direction: column;
     justify-content: space-between;
     box-shadow: none;
     backdrop-filter: none;
   }
   .main-header.active-menu .nav {
+    display: block;
     padding: 64px 0;
-    border-bottom: 1px solid #ddd;
   }
   .main-header.active-menu .nav__links {
     display: flex;
@@ -797,7 +817,7 @@ button {
     border-radius: 40px;
   }
   .main-header.active-menu > .container {
-    padding: 8px 50px;
+    padding: 8px 34px;
   }
 
   .hero__container {
