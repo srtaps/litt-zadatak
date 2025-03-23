@@ -69,6 +69,11 @@
 body {
   font-family: "Work Sans", system-ui, sans-serif;
 }
+body.no-scroll {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+}
 
 a {
   text-decoration: none;
@@ -171,6 +176,27 @@ button {
 }
 .button--purple:hover {
   background-color: var(--purple-color-secondary);
+}
+
+.button--blue {
+  background-color: var(--blue-color);
+}
+.button--blue:hover {
+  background-color: var(--blue-color-secondary);
+}
+
+.button--yellow {
+  background-color: var(--yellow-color);
+}
+.button--yellow:hover {
+  background-color: var(--yellow-color-secondary);
+}
+
+.button--green {
+  background-color: var(--green-color);
+}
+.button--green:hover {
+  background-color: var(--green-color-secondary);
 }
 
 /* LANDING PAGE */
@@ -621,9 +647,6 @@ button {
     justify-content: space-between;
     gap: 8px;
   }
-  /* body.no-scroll {
-    position: fixed;
-  } */
   .nav {
     display: none;
   }
