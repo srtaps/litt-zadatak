@@ -55,7 +55,6 @@
   --font_size-section_title-t: 48px;
   --font_size-section_title-m: 36px;
   --font_size-section_title_2: 36px;
-  --font_size-section_title_2-m: 24px;
   --font_size-section_text: 20px;
   --font_size-section_text-m: 16px;
 }
@@ -68,7 +67,7 @@
 }
 
 body {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", system-ui, sans-serif;
 }
 
 a {
@@ -162,27 +161,6 @@ button {
 .button-icon svg {
   width: 20px;
   height: 16px;
-}
-
-.button--blue {
-  background-color: var(--blue-color);
-}
-.button--blue:hover {
-  background-color: var(--blue-color-secondary);
-}
-
-.button--yellow {
-  background-color: var(--yellow-color);
-}
-.button--yellow:hover {
-  background-color: var(--yellow-color-secondary);
-}
-
-.button--green {
-  background-color: var(--green-color);
-}
-.button--green:hover {
-  background-color: var(--green-color-secondary);
 }
 
 .button--purple {
@@ -854,9 +832,6 @@ button {
 @media (max-width: 580px) {
   .section-title {
     font-size: var(--font_size-section_title-m);
-  }
-  .section-title-2 {
-    font-size: var(--font_size-section_title_2-m);
   }
   .section-text {
     font-size: var(--font_size-section_text-m);
