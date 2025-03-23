@@ -625,6 +625,11 @@ button {
 
 /* MEDIA QUERIES */
 @media (max-width: 1220px) {
+  .padding-landscape {
+    padding-left: var(--padding-landscape);
+    padding-right: var(--padding-landscape);
+  }
+
   .landing-page__categories {
     margin: 40px 0;
     grid-template-columns: 1fr;
@@ -635,10 +640,6 @@ button {
     height: 280px;
   }
 
-  .main-header {
-    padding-left: var(--padding-landscape);
-    padding-right: var(--padding-landscape);
-  }
   .main-header__left {
     width: 100%;
     display: flex;
@@ -686,15 +687,11 @@ button {
   }
 
   .jobs {
-    padding-left: var(--padding-landscape);
-    padding-right: var(--padding-landscape);
     flex-direction: column;
     row-gap: 50px;
   }
 
   .benefits .container {
-    padding-left: var(--padding-landscape);
-    padding-right: var(--padding-landscape);
     flex-direction: column;
     row-gap: 56px;
   }
@@ -709,21 +706,6 @@ button {
   }
   .benefits__info {
     margin-top: 0;
-  }
-
-  .recruitment {
-    padding-left: var(--padding-landscape);
-    padding-right: var(--padding-landscape);
-  }
-
-  .job-cta {
-    padding-left: var(--padding-landscape);
-    padding-right: var(--padding-landscape);
-  }
-
-  .sticky-contact {
-    padding-left: var(--padding-landscape);
-    padding-right: var(--padding-landscape);
   }
 
   #main-footer {
@@ -819,8 +801,6 @@ button {
 
   .benefits .container {
     max-width: 580px;
-    padding-left: var(--padding-mobile);
-    padding-right: var(--padding-mobile);
   }
   .benefits__info {
     gap: 20px;
@@ -850,6 +830,11 @@ button {
 }
 
 @media (max-width: 580px) {
+  .padding-mobile {
+    padding-left: var(--padding-mobile);
+    padding-right: var(--padding-mobile);
+  }
+
   .section-title {
     font-size: var(--font_size-section_title-m);
   }
@@ -858,7 +843,8 @@ button {
   }
 
   .landing-page__categories {
-    padding: 0 var(--padding-mobile);
+    padding-top: 0;
+    padding-bottom: 0;
     justify-content: center;
   }
 
@@ -872,7 +858,8 @@ button {
   }
 
   .main-header {
-    padding: 0 var(--padding-mobile);
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .main-header > .container {
     padding: 8px 20px;
@@ -880,8 +867,6 @@ button {
   }
 
   .hero__container {
-    padding-left: var(--padding-mobile);
-    padding-right: var(--padding-mobile);
     width: 100%;
   }
   .hero__title {
@@ -899,7 +884,8 @@ button {
   }
 
   .jobs {
-    padding: 80px var(--padding-mobile);
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
   .job__info {
     font-size: 16px;
@@ -921,17 +907,8 @@ button {
   }
 
   .recruitment {
-    padding: 80px var(--padding-mobile);
-  }
-
-  .job-cta {
-    padding-left: var(--padding-mobile);
-    padding-right: var(--padding-mobile);
-  }
-
-  .sticky-contact {
-    padding-left: var(--padding-mobile);
-    padding-right: var(--padding-mobile);
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   #main-footer {
