@@ -408,8 +408,6 @@ button {
 /* BENEFITS */
 .benefits {
   background-color: var(--purple-color-opacity);
-  /* border-top-right-radius: 100px;
-  border-bottom-left-radius: 100px; */
   display: flex;
   padding-top: 100px;
   padding-bottom: 70px;
@@ -493,7 +491,7 @@ button {
   top: 0;
   z-index: 25;
   transform: scale(0);
-  transition: transform 0.4s;
+  transition: transform 0.5s;
 }
 .popup-form--show {
   height: 100vh;
@@ -501,6 +499,9 @@ button {
   transform: scale(1);
 }
 .popup-form {
+  color: var(--gray-color-2);
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
   background-color: #fff;
   max-width: 600px;
   width: 100%;
@@ -514,22 +515,16 @@ button {
   color: var(--gray-color-1);
 }
 .popup-form__text {
-  color: var(--gray-color-2);
-  font-size: 18px;
   line-height: 1.6;
   margin: 20px 0;
 }
 .popup-form label {
-  color: var(--gray-color-2);
-  font-size: 18px;
   margin-top: 20px;
   margin-bottom: 12px;
   display: block;
 }
 .popup-form input {
-  color: var(--gray-color-2);
-  font-family: "Work Sans", sans-serif;
-  font-size: 18px;
+  font: inherit;
   width: 100%;
   padding: 12px 20px;
   border: 1px solid var(--gray-color-2);
