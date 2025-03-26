@@ -18,7 +18,7 @@ openFormButton.addEventListener("click", (e) => {
   e.preventDefault();
 
   // let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-  document.body.classList.toggle("no-scroll");
+  // document.body.classList.toggle("no-scroll");
   // document.body.style.top = `-${scrollPosition}px`;
 
   popupForm.classList.toggle("popup-form--show");
