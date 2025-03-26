@@ -542,7 +542,7 @@ button {
 }
 .popup-form__text {
   line-height: 1.6;
-  margin: 20px 0;
+  margin: 20px 0 36px;
 }
 .popup-form label {
   margin-top: 20px;
@@ -756,6 +756,10 @@ button {
     border-radius: 0 60px;
   }
 
+  .max-width-tablet {
+    max-width: 580px;
+  }
+
   .landing-page__categories {
     max-width: 100%;
   }
@@ -769,9 +773,6 @@ button {
 
   .main-header {
     padding: 0;
-  }
-  .main-header > .container {
-    max-width: 580px;
   }
 
   .hero {
@@ -790,7 +791,6 @@ button {
 
   .jobs {
     padding: 100px 0;
-    max-width: 580px;
   }
   .jobs__title-left,
   .jobs__label,
@@ -799,32 +799,25 @@ button {
     text-align: center;
   }
 
-  .benefits .container {
-    max-width: 580px;
-  }
   .benefits__info {
     gap: 20px;
   }
 
   .recruitment {
-    max-width: 580px;
     padding: 150px 0 100px 0;
   }
 
   .job-cta {
-    max-width: 580px;
     padding-left: 0;
     padding-right: 0;
   }
 
   .sticky-contact {
-    max-width: 580px;
     padding-left: 0;
     padding-right: 8px;
   }
 
   #main-footer {
-    max-width: 580px;
     margin: auto auto 20px;
   }
 }
