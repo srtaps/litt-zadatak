@@ -107,7 +107,7 @@ button {
 .color--purple {
   color: var(--purple-color);
 }
-.text-hover--purple:hover {
+.color-hover--purple:hover {
   color: var(--purple-color-secondary);
 }
 
