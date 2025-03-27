@@ -90,6 +90,14 @@ button {
   text-align: center;
 }
 
+.d-flex {
+  display: flex;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
 .hide {
   display: none;
 }
@@ -119,6 +127,16 @@ button {
   background-color: var(--purple-color-opacity);
 }
 
+.border-radius-1 {
+  border-radius: 0 32px;
+}
+.border-radius-2 {
+  border-radius: 32px 0;
+}
+
+.section-gap {
+  gap: 40px;
+}
 .section-column {
   flex: 1;
 }
@@ -128,6 +146,7 @@ button {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 3px;
+  margin-bottom: 12px;
 }
 .section-title {
   font-family: "Alice", serif;
@@ -147,13 +166,25 @@ button {
   font-weight: 400;
   color: var(--gray-color-2);
   line-height: 1.5;
+  margin-top: 28px;
+}
+.section-image {
+  width: 100%;
 }
 .section-button {
   margin-left: auto;
   margin-right: auto;
 }
-.section-border-radius {
+.section-border-radius-1 {
   border-radius: 0 100px;
+}
+.section-padding-1 {
+  padding-top: 144px;
+  padding-bottom: 144px;
+}
+.section-padding-2 {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .icon--white {
@@ -218,12 +249,10 @@ button {
   padding-top: 40px;
   padding-bottom: 20px;
   min-height: 100vh;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .landing-page__header {
-  display: flex;
   justify-content: center;
 }
 .landing-page__categories {
@@ -286,7 +315,6 @@ button {
   background-color: var(--header-color-opacity);
   padding: 8px 20px;
   border-radius: 100px;
-  display: flex;
   justify-content: space-between;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(8px);
@@ -297,7 +325,6 @@ button {
 }
 .nav__links {
   list-style: none;
-  display: flex;
   align-items: center;
   column-gap: 40px;
 }
@@ -380,7 +407,6 @@ button {
 }
 .hero__buttons {
   margin-top: 50px;
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
@@ -388,17 +414,7 @@ button {
 
 /* AVAILABLE JOBS */
 .jobs {
-  padding-top: 150px;
-  padding-bottom: 150px;
-  display: flex;
   column-gap: 120px;
-}
-
-.jobs__title-left {
-  margin-top: 10px;
-}
-.jobs__description {
-  margin-top: 30px;
 }
 
 .jobs__title-right {
@@ -407,7 +423,6 @@ button {
 }
 .jobs__available {
   padding-top: 20px;
-  display: flex;
   flex-direction: column;
   row-gap: 10px;
 }
@@ -442,12 +457,10 @@ button {
 /* BENEFITS */
 .benefits {
   background-color: var(--purple-color-opacity);
-  display: flex;
   padding-top: 100px;
   padding-bottom: 70px;
 }
 .benefits .container {
-  display: flex;
   column-gap: 65px;
 }
 .benefits__icon svg {
@@ -455,22 +468,16 @@ button {
   height: 72px;
 }
 .benefits__info {
-  margin-top: 30px;
-  display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
 /* RECRUITMENT NEEDS */
 .recruitment {
-  padding-top: 150px;
-  padding-bottom: 150px;
   text-align: center;
 }
 .recruitment__image {
   max-width: 780px;
-  width: 100%;
-  border-radius: 30px 0;
   margin-bottom: 40px;
 }
 .recruitment__text {
@@ -481,9 +488,6 @@ button {
 }
 
 /* JOB CTA */
-.job-cta__text {
-  margin-top: 30px;
-}
 
 /* STICKY CONTACT */
 .sticky-contact {
@@ -494,14 +498,12 @@ button {
   margin-bottom: 20px;
 }
 .contact-button {
-  margin-left: auto;
   height: 48px;
   width: 48px;
+  margin-left: auto;
+  margin-bottom: 28px;
   border-radius: 50%;
   display: block;
-}
-#scroll-top {
-  margin-top: 28px;
 }
 
 /* POPUP FORM */
@@ -511,7 +513,6 @@ button {
   padding: 16px;
   background-color: var(--gray-color-1-opacity);
   overflow: hidden;
-  display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -570,7 +571,6 @@ button {
   margin-bottom: 30px;
   border-radius: 30px;
   color: #fff;
-  display: flex;
   flex-wrap: wrap;
 }
 .main-footer__column {
@@ -606,13 +606,11 @@ button {
   border-top: 1px solid #444;
   width: 100%;
   padding-top: 32px;
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .main-footer__socials {
   padding-right: 50px;
-  display: flex;
   align-items: center;
   gap: 28px;
 }
@@ -706,6 +704,13 @@ button {
     margin-top: 0;
   }
 
+  #about-page #we-are {
+    flex-direction: column-reverse;
+  }
+  #about-page #why-us {
+    flex-direction: column;
+  }
+
   #main-footer {
     margin-left: var(--padding-landscape);
     margin-right: var(--padding-landscape);
@@ -741,6 +746,11 @@ button {
 }
 
 @media (max-width: 768px) {
+  .padding-landscape {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .section-label {
     font-size: 16px;
   }
@@ -750,8 +760,12 @@ button {
   .section-text {
     font-size: var(--font_size-section_text-m);
   }
-  .section-border-radius {
+  .section-border-radius-1 {
     border-radius: 0 60px;
+  }
+  .section-padding-1 {
+    padding-top: 140px;
+    padding-bottom: 96px;
   }
 
   .max-width-tablet {
@@ -787,9 +801,6 @@ button {
     margin-top: 24px;
   }
 
-  .jobs {
-    padding: 100px 0;
-  }
   .jobs__title-left,
   .jobs__label,
   .jobs__description,
@@ -801,18 +812,14 @@ button {
     gap: 20px;
   }
 
-  .recruitment {
-    padding: 150px 0 100px 0;
-  }
-
-  .job-cta {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
   .sticky-contact {
     padding-left: 0;
     padding-right: 8px;
+  }
+
+  #why-us,
+  #we-are {
+    text-align: center;
   }
 
   #main-footer {
@@ -831,6 +838,14 @@ button {
   }
   .section-text {
     font-size: var(--font_size-section_text-m);
+  }
+  .section-padding-1 {
+    padding-top: 76px;
+    padding-bottom: 76px;
+  }
+  .section-padding-2 {
+    padding-top: 48px;
+    padding-bottom: 60px;
   }
 
   .landing-page__categories {
@@ -874,10 +889,6 @@ button {
     flex-direction: column;
   }
 
-  .jobs {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
   .job__info {
     font-size: 16px;
     margin-top: 20px;
@@ -895,11 +906,6 @@ button {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-  }
-
-  .recruitment {
-    padding-top: 80px;
-    padding-bottom: 80px;
   }
 
   #main-footer {
