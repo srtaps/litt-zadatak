@@ -2,8 +2,6 @@ const mainHeader = document.getElementById("header");
 const toggleMenuButton = document.getElementById("open-menu");
 const hamburgerIcon = document.querySelector("#open-menu svg");
 const closeIcon = document.querySelector("#open-menu p");
-const openFormButton = document.getElementById("form-button");
-const popupForm = document.getElementById("form-popup");
 const topScrollButton = document.getElementById("scroll-top");
 
 toggleMenuButton.addEventListener("click", (e) => {
@@ -14,24 +12,50 @@ toggleMenuButton.addEventListener("click", (e) => {
   closeIcon.classList.toggle("hide");
 });
 
-function toggleForm() {
-  let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-  document.body.classList.toggle("no-scroll");
-  document.body.style.top = `-${scrollPosition}px`;
-
-  popupForm.classList.toggle("popup-form--show");
-}
-
-// setTimeout(toggleForm, 3000);
-
-openFormButton.addEventListener("click", (e) => {
-  e.preventDefault();
-
-  toggleForm();
-});
-
 topScrollButton.addEventListener("click", (e) => {
   e.preventDefault();
 
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+if (window.location.pathname.endsWith("marketing.html")) {
+  const openFormButton = document.getElementById("form-button");
+  const closeFormButtons = document.querySelectorAll(".form-close");
+  const popupForm = document.getElementById("form-popup");
+
+  let scrollPosition = 0;
+
+  function openForm() {
+    scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+    document.body.classList.add("no-scroll");
+    document.body.style.top = `-${scrollPosition}px`;
+    popupForm.style.transform = "scale(1)";
+    popupForm.classList.add("popup-form--show");
+  }
+
+  function closeForm() {
+    document.body.classList.remove("no-scroll");
+    window.scrollTo(0, scrollPosition);
+    popupForm.style.transform = "scale(0)";
+    setTimeout(() => {
+      popupForm.classList.remove("popup-form--show");
+    }, 500);
+  }
+
+  // setTimeout(openForm, 0);
+
+  openFormButton.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    openForm();
+  });
+
+  closeFormButtons.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      closeForm();
+    });
+  });
+}

@@ -515,8 +515,6 @@ button {
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  top: 0;
   z-index: 25;
   transform: scale(0);
   transition: transform 0.5s;
@@ -524,7 +522,8 @@ button {
 .popup-form--show {
   height: 100vh;
   width: 100%;
-  transform: scale(1);
+  position: fixed;
+  top: 0;
 }
 .popup-form {
   color: var(--gray-color-2);
@@ -535,6 +534,10 @@ button {
   width: 100%;
   padding: 24px;
   border-radius: 0 32px;
+}
+.popup-form .flex-container {
+  justify-content: space-between;
+  align-items: center;
 }
 .popup-form__title {
   font-family: "Alice", serif;
@@ -559,7 +562,18 @@ button {
   border-radius: 8px;
 }
 .popup-form__submit {
-  margin: 32px auto 0;
+  margin: 32px auto 24px;
+}
+.form-close {
+  cursor: pointer;
+}
+.form-close__icon {
+  font-size: 20px;
+  font-weight: 500;
+}
+.form-close__text {
+  width: fit-content;
+  margin: 0 auto;
 }
 
 /* MAIN FOOTER */
