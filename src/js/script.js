@@ -14,14 +14,20 @@ toggleMenuButton.addEventListener("click", (e) => {
   closeIcon.classList.toggle("hide");
 });
 
+function toggleForm() {
+  let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  document.body.classList.toggle("no-scroll");
+  document.body.style.top = `-${scrollPosition}px`;
+
+  popupForm.classList.toggle("popup-form--show");
+}
+
+// setTimeout(toggleForm, 3000);
+
 openFormButton.addEventListener("click", (e) => {
   e.preventDefault();
 
-  // let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-  // document.body.classList.toggle("no-scroll");
-  // document.body.style.top = `-${scrollPosition}px`;
-
-  popupForm.classList.toggle("popup-form--show");
+  toggleForm();
 });
 
 topScrollButton.addEventListener("click", (e) => {
