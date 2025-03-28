@@ -138,6 +138,10 @@ button {
   border-radius: 32px 0;
 }
 
+.border--purple {
+  border: 2px solid var(--purple-color);
+}
+
 .section-gap {
   gap: 40px;
 }
@@ -602,6 +606,60 @@ button {
   margin-right: auto;
 }
 
+/* TESTIMONIALS */
+.swiper {
+  margin-bottom: 32px;
+}
+.swiper-wrapper {
+  align-items: center;
+}
+.testimonials {
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+.testimonials__review {
+  max-width: 780px;
+  margin: 48px auto 0;
+  font-style: italic;
+}
+.testimonials__author {
+  margin-top: 32px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.testimonials__controls {
+  margin: 24px auto 32px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 28px;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+.custom-swiper-button {
+  margin: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: unset;
+}
+.custom-swiper-button svg {
+  width: 28px;
+  height: 28px;
+}
+.swiper-pagination {
+  position: unset;
+  width: unset !important;
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+.purple-brand .swiper-pagination-bullet-active {
+  background-color: var(--purple-color);
+}
+
 /* MAIN FOOTER */
 #main-footer {
   font-family: "Work Sans", sans-serif;
@@ -870,6 +928,14 @@ button {
   .steps .section-text {
     font-size: 20px;
     line-height: 1.3;
+  }
+
+  .testimonials__review {
+    max-width: 580px;
+    font-size: 18px;
+  }
+  .testimonials__author {
+    font-size: 20px;
   }
 
   #main-footer {

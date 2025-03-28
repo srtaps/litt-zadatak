@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services - LITT Recruitment</title>
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/styles.css" />
+    <script defer src="../js/swiper-bundle.min.js"></script>
     <script defer src="../js/script.js"></script>
   </head>
-  <body>
+  <body class="purple-brand">
     <header id="header" class="main-header padding-landscape padding-mobile">
       <div class="container max-width-tablet d-flex">
         <div class="main-header__left">
@@ -50,8 +52,8 @@
           <ul class="nav__links d-flex">
             <li>
               <a
-                class="nav__link active-nav color--purple color-hover--purple"
-                href="#"
+                class="nav__link color--gray-1 color-hover--purple"
+                href="../index.html"
                 >Home</a
               >
             </li>
@@ -64,8 +66,8 @@
             </li>
             <li>
               <a
-                class="nav__link color--gray-1 color-hover--purple"
-                href="./services.html"
+                class="nav__link active-nav color--purple color-hover--purple"
+                href="#"
                 >Services</a
               >
             </li>
@@ -404,9 +406,99 @@
         </div>
       </section>
 
-      <section class="testimonials container text-center">
+      <section
+        class="testimonials container padding-landscape padding-mobile max-width-tablet text-center"
+      >
         <p class="section-label color--purple">TESTIMONIALS</p>
         <h2 class="section-title">What our clients say</h2>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p class="testimonials__review section-text">
+                “Very professional, acting promptly and in a timely way to find
+                the right person, who was a perfect fit for us on a skills,
+                values and cultural level. They were very easy to do business
+                with and also made lots of follow-up calls with us and the new
+                employee making it a good experience for all involved. I would
+                definitely recommend their recruitment services”
+              </p>
+              <p class="testimonials__author">Lynn</p>
+            </div>
+            <div class="swiper-slide">
+              <p class="testimonials__review section-text">
+                “One of the standout qualities of LITT Recruitment Group is
+                their impressive level of responsiveness. From our initial
+                contact, they demonstrated a genuine commitment to understanding
+                our unique recruitment needs. Their team promptly addressed all
+                our inquiries, ensuring that we felt well-supported and valued
+                throughout the entire process. Their proactive communication and
+                efficient follow-up helped create a smooth and streamlined
+                experience that truly set them apart.”
+              </p>
+              <p class="testimonials__author">Geoff</p>
+            </div>
+            <div class="swiper-slide">
+              <p class="testimonials__review section-text">
+                “LITT Recruitment Group are a key partner across multiple
+                disciplines within our business. They fully understand how to
+                represent our business core values and the nature of our
+                opportunities and have been a real asset in building the future
+                of our business.”
+              </p>
+              <p class="testimonials__author">Utilities Business</p>
+            </div>
+            <div class="swiper-slide">
+              <p class="testimonials__review section-text">
+                “We have worked with the team at Litt for some time now. They're
+                incredibly on the ball with communication and bringing
+                candidates forward. It's clear that customer service is
+                important to them and we feel valued as clients.”
+              </p>
+              <p class="testimonials__author">Claire</p>
+            </div>
+          </div>
+
+          <div class="testimonials__controls d-flex">
+            <div class="swiper-button-prev custom-swiper-button border--purple">
+              <svg
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                image-rendering="optimizeQuality"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                viewBox="0 0 512 404.43"
+              >
+                <path
+                  fill-rule="nonzero"
+                  d="m68.69 184.48 443.31.55v34.98l-438.96-.54 173.67 159.15-23.6 25.79L0 199.94 218.6.02l23.6 25.79z"
+                />
+              </svg>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next custom-swiper-button border--purple">
+              <svg
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                image-rendering="optimizeQuality"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                viewBox="0 0 512 404.39"
+              >
+                <path
+                  fill-rule="nonzero"
+                  d="M438.95 219.45 0 219.99v-34.98l443.3-.55L269.8 25.79 293.39 0 512 199.92 288.88 404.39l-23.59-25.8z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
 
         <a href="#" class="button button--purple section-button"
           >Looking to recruit<span class="button-icon"
