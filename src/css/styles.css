@@ -1091,6 +1091,10 @@ button {
     font-size: 16px;
   }
 
+  .custom-swiper-button {
+    display: none;
+  }
+
   .accordion-header {
     font-size: 24px;
   }
