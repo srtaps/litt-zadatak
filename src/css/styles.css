@@ -555,6 +555,7 @@ button {
   padding: 10px 0;
   margin-top: 50px;
   margin-bottom: 20px;
+  pointer-events: none;
 }
 .contact-button {
   height: 48px;
@@ -563,6 +564,7 @@ button {
   margin-bottom: 28px;
   border-radius: 50%;
   display: block;
+  pointer-events: auto;
 }
 
 /* POPUP FORM */
