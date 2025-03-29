@@ -43,7 +43,7 @@ if (window.location.pathname.endsWith("marketing.html")) {
     }, 500);
   }
 
-  setTimeout(openForm, 0);
+  setTimeout(openForm, 3000);
 
   openFormButton.addEventListener("click", (e) => {
     e.preventDefault();
