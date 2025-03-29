@@ -59,11 +59,16 @@
   --font_size-section_text-m: 16px;
 }
 
-/* RESET */
+/* UNIVERSAL */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(170, 170, 170) #f1f1f1;
 }
 
 body {
