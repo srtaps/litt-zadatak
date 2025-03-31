@@ -378,6 +378,7 @@ button {
   width: 100%;
   top: 36px;
   z-index: 20;
+  pointer-events: none;
 }
 .main-header > .container {
   background-color: var(--header-color-opacity);
@@ -386,6 +387,7 @@ button {
   justify-content: space-between;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(8px);
+  pointer-events: auto;
 }
 .nav {
   margin-top: auto;
