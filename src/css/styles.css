@@ -211,6 +211,9 @@ button {
 .icon--purple {
   fill: var(--purple-color);
 }
+.icon--hover-purple {
+  fill: var(--purple-color);
+}
 
 /* FAQ */
 .accordion-radio {
@@ -524,6 +527,8 @@ button {
   font-family: "Work Sans", sans-serif;
   font-size: 20px;
   font-weight: 500;
+  align-items: center;
+  gap: 16px;
   color: var(--gray-color-1);
   transition: all 0.7s;
 }
