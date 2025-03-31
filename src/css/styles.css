@@ -288,10 +288,11 @@ button {
   max-width: fit-content;
   align-items: center;
   transition: background-color 0.4s ease;
-}
-.button-icon svg {
-  width: 20px;
-  height: 16px;
+
+  svg {
+    width: 20px;
+    height: 16px;
+  }
 }
 
 .button--purple {
