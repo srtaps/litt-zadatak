@@ -22,6 +22,8 @@ if (window.location.pathname.endsWith("marketing.html")) {
   const openFormButton = document.getElementById("form-button");
   const closeFormButtons = document.querySelectorAll(".form-close");
   const popupForm = document.getElementById("form-popup");
+  const heroScrollDown = document.getElementById("hero-scroll");
+  const nextSection = document.querySelector("section.jobs");
 
   let scrollPosition = 0;
 
@@ -56,6 +58,16 @@ if (window.location.pathname.endsWith("marketing.html")) {
       e.preventDefault();
 
       closeForm();
+    });
+  });
+
+  heroScrollDown.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    nextSection.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+      inline: "nearest",
     });
   });
 }
