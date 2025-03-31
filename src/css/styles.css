@@ -75,8 +75,8 @@ body {
   font-family: "Work Sans", system-ui, sans-serif;
 
   &.no-scroll {
-    position: fixed;
     width: 100%;
+    position: fixed;
     overflow: hidden;
   }
 }
@@ -630,7 +630,6 @@ button {
 .sticky-contact {
   position: sticky;
   bottom: 36px;
-  padding: 10px 0;
   margin-top: 50px;
   margin-bottom: 20px;
   pointer-events: none;
@@ -638,8 +637,7 @@ button {
 .contact-button {
   height: 48px;
   width: 48px;
-  margin-left: auto;
-  margin-bottom: 28px;
+  margin: 0 4px 28px auto;
   border-radius: 50%;
   display: block;
   pointer-events: auto;
@@ -654,7 +652,7 @@ button {
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  z-index: 25;
+  z-index: 35;
   transform: scale(0);
   transition: transform 0.5s;
 }
@@ -917,10 +915,13 @@ button {
   /* When mobile navigation is open */
   .main-header.active-menu {
     height: 100vh;
-    background-color: #fff;
     width: 100%;
+    background-color: #fff;
     padding-top: 36px;
+    position: fixed;
     top: 0;
+    z-index: 30;
+    overflow-y: auto;
 
     .container {
       background-color: #fff;
@@ -1056,7 +1057,7 @@ button {
   }
 
   .max-width-tablet {
-    max-width: 580px;
+    max-width: 576px;
   }
 
   .landing-page__categories {
@@ -1092,11 +1093,6 @@ button {
 
   .benefits__info {
     gap: 20px;
-  }
-
-  .sticky-contact {
-    padding-left: 0;
-    padding-right: 8px;
   }
 
   .steps {
