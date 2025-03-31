@@ -800,6 +800,13 @@ button {
 
 /* MEDIA QUERIES */
 @media (max-width: 1220px) {
+  .f-column--t {
+    flex-direction: column;
+  }
+  .f-rev-column--t {
+    flex-direction: column-reverse;
+  }
+
   .padding-landscape {
     padding-left: var(--padding-landscape);
     padding-right: var(--padding-landscape);
@@ -883,13 +890,6 @@ button {
   }
   .benefits__text.section-text {
     margin-top: 0;
-  }
-
-  #about-page #we-are {
-    flex-direction: column-reverse;
-  }
-  #about-page #why-us {
-    flex-direction: column;
   }
 
   #main-footer {
