@@ -61,6 +61,14 @@ if (window.location.pathname.endsWith("marketing.html")) {
     });
   });
 
+  popupForm.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    if (e.target === popupForm) {
+      closeForm();
+    }
+  });
+
   heroScrollDown.addEventListener("click", (e) => {
     e.preventDefault();
 
