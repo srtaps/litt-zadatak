@@ -7,6 +7,7 @@ const topScrollButton = document.getElementById("scroll-top");
 toggleMenuButton.addEventListener("click", (e) => {
   e.preventDefault();
 
+  document.body.classList.toggle("no-scroll");
   mainHeader.classList.toggle("active-menu");
   hamburgerIcon.classList.toggle("hide");
   closeIcon.classList.toggle("hide");
@@ -37,7 +38,10 @@ if (window.location.pathname.endsWith("marketing.html")) {
   }
 
   function closeForm() {
-    document.body.classList.remove("no-scroll");
+    if (!mainHeader.classList.contains("active-menu")) {
+      document.body.classList.remove("no-scroll");
+    }
+
     window.scrollTo(0, scrollPosition);
     popupForm.style.transform = "scale(0)";
     setTimeout(() => {
