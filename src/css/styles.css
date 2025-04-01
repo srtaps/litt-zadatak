@@ -1249,11 +1249,13 @@ button {
     display: block;
   }
 
-  .benefits__card {
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  .benefits {
+    .benefits__card {
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
   }
 
   .steps .section-text {
