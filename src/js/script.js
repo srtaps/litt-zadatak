@@ -19,10 +19,11 @@ topScrollButton.addEventListener("click", (e) => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-if (window.location.pathname.endsWith("marketing.html")) {
+let popupForm = document.getElementById("form-popup");
+
+if (popupForm) {
   const openFormButton = document.getElementById("form-button");
   const closeFormButtons = document.querySelectorAll(".form-close");
-  const popupForm = document.getElementById("form-popup");
   const heroScrollDown = document.getElementById("hero-scroll");
   const nextSection = document.querySelector("section.jobs");
 
@@ -84,7 +85,9 @@ if (window.location.pathname.endsWith("marketing.html")) {
   });
 }
 
-if (window.location.pathname.endsWith("services.html")) {
+let swiperElement = document.querySelector(".swiper");
+
+if (swiperElement) {
   const swiper = new Swiper(".swiper", {
     // If we need pagination
     pagination: {
