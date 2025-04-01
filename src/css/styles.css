@@ -777,10 +777,9 @@ button {
     width: 12px;
     height: 12px;
   }
-
-  .purple-brand .swiper-pagination-bullet-active {
-    background-color: var(--purple-color);
-  }
+}
+.purple-brand .swiper-pagination-bullet-active {
+  background-color: var(--purple-color);
 }
 
 .testimonials {
