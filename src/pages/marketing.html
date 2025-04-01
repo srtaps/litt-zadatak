@@ -157,7 +157,7 @@
           </p>
           <div class="hero__buttons d-flex">
             <a href="#" class="button button--purple"
-              >Looking to recruit<span class="button-icon"
+              >Looking to recruit<span class="button-icon" aria-hidden="true"
                 ><svg
                   width="20"
                   height="16"
@@ -176,7 +176,7 @@
                   /></svg></span
             ></a>
             <a href="#" class="button button--purple"
-              >Looking for work<span class="button-icon"
+              >Looking for work<span class="button-icon" aria-hidden="true"
                 ><svg
                   width="20"
                   height="16"
@@ -199,6 +199,7 @@
         <div id="hero-scroll" class="scroll-down d-flex">
           <p>SCROLL</p>
           <svg
+            aria-hidden="true"
             class="icon--white"
             width="16"
             height="45"
@@ -550,8 +551,13 @@
         <div
           class="sticky-contact container padding-landscape padding-mobile max-width-tablet"
         >
-          <button id="form-button" class="contact-button button--purple">
+          <button
+            id="form-button"
+            class="contact-button button--purple"
+            aria-label="Contact Form"
+          >
             <svg
+              aria-hidden="true"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -564,8 +570,13 @@
               ></path>
             </svg>
           </button>
-          <button id="scroll-top" class="contact-button button--purple">
+          <button
+            id="scroll-top"
+            class="contact-button button--purple"
+            aria-label="Scroll to top"
+          >
             <svg
+              aria-hidden="true"
               width="24"
               height="24"
               xmlns="http://www.w3.org/2000/svg"
