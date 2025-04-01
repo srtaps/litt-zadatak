@@ -16,7 +16,7 @@
               <img
                 class="logo--landscape"
                 src="../images/logo-landscape.png"
-                alt=""
+                alt="Litt Logo"
               />
             </a>
             <button
@@ -144,7 +144,7 @@
       </header>
 
       <section class="hero">
-        <img class="hero__image" src="../images/hero-image-2.jpg" alt="" />
+        <img class="hero__image" src="../images/hero-image-2.webp" alt="" />
         <div class="hero__container padding-mobile">
           <h1 class="hero__title">About Us</h1>
         </div>
@@ -266,7 +266,11 @@
         </div>
       </div>
 
-      <footer id="main-footer" class="container max-width-tablet d-flex">
+      <footer
+        id="main-footer"
+        class="container max-width-tablet d-flex"
+        role="contentinfo"
+      >
         <div class="main-footer__column">
           <h4 class="main-footer__title">LITT Recruitment Group</h4>
           <p class="main-footer__address">
@@ -290,7 +294,7 @@
           <ul class="main-footer__list">
             <li>
               <a href="#"
-                ><span class="icon--white">
+                ><span class="icon--white" aria-hidden="true">
                   <svg
                     width="16"
                     height="16"
@@ -310,7 +314,7 @@
             </li>
             <li>
               <a href="#"
-                ><span class="icon--white">
+                ><span class="icon--white" aria-hidden="true">
                   <svg
                     width="16"
                     height="16"
@@ -337,8 +341,9 @@
             </p>
           </div>
           <div class="main-footer__socials d-flex">
-            <a href="#">
+            <a href="#" aria-label="Visit our Instagram">
               <svg
+                aria-hidden="true"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -366,8 +371,9 @@
               </svg>
             </a>
 
-            <a href="#">
+            <a href="#" aria-label="Visit our Facebook">
               <svg
+                aria-hidden="true"
                 width="28"
                 height="28"
                 viewBox="0 0 28 28"
@@ -381,8 +387,9 @@
               </svg>
             </a>
 
-            <a href="#">
+            <a href="#" aria-label="Visit our LinkedIn">
               <svg
+                aria-hidden="true"
                 width="28"
                 height="28"
                 viewBox="0 0 28 28"
