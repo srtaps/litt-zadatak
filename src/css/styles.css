@@ -17,6 +17,25 @@
   font-weight: 400 500 600 700;
 }
 
+/* ANIMATIONS */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 /* VARIABLES */
 :root {
   --yellow-color: #be9e44;
@@ -399,7 +418,7 @@ button {
 
 /* MAIN HEADER */
 .main-header {
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 36px;
   z-index: 20;
@@ -413,6 +432,15 @@ button {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(8px);
     pointer-events: auto;
+  }
+
+  &.header-fixed {
+    position: fixed;
+    animation: slideDown 0.6s ease-out;
+  }
+
+  &.header-absolute {
+    animation: slideUp 0.6s ease;
   }
 }
 

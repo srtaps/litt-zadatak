@@ -4,6 +4,25 @@ const hamburgerIcon = document.querySelector("#open-menu svg");
 const closeIcon = document.querySelector("#open-menu p");
 const topScrollButton = document.getElementById("scroll-top");
 
+let isSticky = false;
+
+function handleHeaderScroll() {
+  const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+  if (scrollPosition >= 100) {
+    header.classList.add("header-fixed");
+    header.classList.remove("header-absolute");
+    isSticky = true;
+  } else if (isSticky) {
+    header.classList.remove("header-fixed");
+    header.classList.add("header-absolute");
+    isSticky = false;
+  }
+}
+
+window.addEventListener("scroll", handleHeaderScroll);
+window.addEventListener("touchmove", handleHeaderScroll);
+
 toggleMenuButton.addEventListener("click", (e) => {
   e.preventDefault();
 
@@ -50,7 +69,7 @@ if (popupForm) {
     }, 500);
   }
 
-  setTimeout(openForm, 3000);
+  // setTimeout(openForm, 3000);
 
   openFormButton.addEventListener("click", (e) => {
     e.preventDefault();
