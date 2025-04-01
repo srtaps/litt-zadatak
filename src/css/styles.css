@@ -1184,21 +1184,23 @@ button {
     }
   }
 
-  .hero__container {
-    width: 100%;
-  }
-  .hero__title {
-    font-size: var(--font_size-hero_title-m);
-  }
-  .hero__subtitle {
-    font-size: var(--font_size-hero_subtitle-m);
-    margin-top: 20px;
-  }
-  .hero__buttons {
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: column;
+  .hero {
+    .hero__container {
+      width: 100%;
+    }
+    .hero__title {
+      font-size: var(--font_size-hero_title-m);
+    }
+    .hero__subtitle {
+      font-size: var(--font_size-hero_subtitle-m);
+      margin-top: 20px;
+    }
+    .hero__buttons {
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column;
+    }
   }
 
   .job__info {
