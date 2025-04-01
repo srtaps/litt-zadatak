@@ -69,7 +69,7 @@ if (popupForm) {
     }, 500);
   }
 
-  // setTimeout(openForm, 3000);
+  setTimeout(openForm, 3000);
 
   openFormButton.addEventListener("click", (e) => {
     e.preventDefault();
