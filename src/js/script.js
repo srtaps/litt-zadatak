@@ -26,13 +26,13 @@ if (window.location.pathname.endsWith("marketing.html")) {
   const heroScrollDown = document.getElementById("hero-scroll");
   const nextSection = document.querySelector("section.jobs");
 
-  let scrollPosition = 0;
+  // let scrollPosition = 0;
 
   function openForm() {
-    scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    // scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
     document.body.classList.add("no-scroll");
-    document.body.style.top = `-${scrollPosition}px`;
+    // document.body.style.top = `-${scrollPosition}px`;
     popupForm.style.transform = "scale(1)";
     popupForm.classList.add("popup-form--show");
   }
@@ -42,7 +42,7 @@ if (window.location.pathname.endsWith("marketing.html")) {
       document.body.classList.remove("no-scroll");
     }
 
-    window.scrollTo(0, scrollPosition);
+    // window.scrollTo(0, scrollPosition);
     popupForm.style.transform = "scale(0)";
     setTimeout(() => {
       popupForm.classList.remove("popup-form--show");
