@@ -167,7 +167,7 @@
           class="container padding-landscape padding-mobile max-width-tablet d-flex"
         >
           <div class="benefits__card section-column text-center">
-            <p class="benefits__icon icon--purple">
+            <div class="benefits__icon icon--purple" aria-hidden="true">
               <?xml version="1.0" encoding="utf-8"?><svg
                 width="72"
                 height="72"
@@ -194,7 +194,7 @@
                   />
                 </g>
               </svg>
-            </p>
+            </div>
             <div class="benefits__info d-flex">
               <p class="benefits__title section-title-2">Data Driven Choices</p>
               <p class="benefits__text section-text">
@@ -204,7 +204,7 @@
             </div>
           </div>
           <div class="benefits__card section-column text-center">
-            <p class="benefits__icon icon--purple">
+            <div class="benefits__icon icon--purple" aria-hidden="true">
               <?xml version="1.0" encoding="utf-8"?><svg
                 width="72"
                 height="72"
@@ -224,7 +224,7 @@
                   />
                 </g>
               </svg>
-            </p>
+            </div>
             <div class="benefits__info d-flex">
               <p class="benefits__title section-title-2">Wide Reach</p>
               <p class="benefits__text section-text">
@@ -235,7 +235,7 @@
             </div>
           </div>
           <div class="benefits__card section-column text-center">
-            <p class="benefits__icon icon--purple">
+            <div class="benefits__icon icon--purple" aria-hidden="true">
               <?xml version="1.0" encoding="utf-8"?><svg
                 width="72"
                 height="72"
@@ -257,7 +257,7 @@
                   />
                 </g>
               </svg>
-            </p>
+            </div>
             <div class="benefits__info d-flex">
               <p class="benefits__title section-title-2">
                 Strategic Touch Points
@@ -294,6 +294,7 @@
           </p>
         </div>
         <svg
+          aria-hidden="true"
           width="32"
           height="32"
           xmlns="http://www.w3.org/2000/svg"
@@ -318,6 +319,7 @@
           </p>
         </div>
         <svg
+          aria-hidden="true"
           width="32"
           height="32"
           xmlns="http://www.w3.org/2000/svg"
@@ -345,6 +347,7 @@
           </p>
         </div>
         <svg
+          aria-hidden="true"
           width="32"
           height="32"
           xmlns="http://www.w3.org/2000/svg"
@@ -370,6 +373,7 @@
           </p>
         </div>
         <svg
+          aria-hidden="true"
           width="32"
           height="32"
           xmlns="http://www.w3.org/2000/svg"
@@ -455,8 +459,12 @@
           </div>
 
           <div class="testimonials__controls d-flex">
-            <div class="swiper-button-prev custom-swiper-button border--purple">
+            <button
+              class="swiper-button-prev custom-swiper-button border--purple"
+              aria-label="Previous testimonial slide"
+            >
               <svg
+                aria-hidden="true"
                 width="24"
                 height="24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -472,10 +480,14 @@
                   d="m68.69 184.48 443.31.55v34.98l-438.96-.54 173.67 159.15-23.6 25.79L0 199.94 218.6.02l23.6 25.79z"
                 />
               </svg>
-            </div>
+            </button>
             <div class="swiper-pagination"></div>
-            <div class="swiper-button-next custom-swiper-button border--purple">
+            <button
+              class="swiper-button-next custom-swiper-button border--purple"
+              aria-label="Next testimonial slide"
+            >
               <svg
+                aria-hidden="true"
                 width="24"
                 height="24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -491,12 +503,12 @@
                   d="M438.95 219.45 0 219.99v-34.98l443.3-.55L269.8 25.79 293.39 0 512 199.92 288.88 404.39l-23.59-25.8z"
                 />
               </svg>
-            </div>
+            </button>
           </div>
         </div>
 
         <a href="#" class="button button--purple section-button"
-          >Looking to recruit<span class="button-icon"
+          >Looking to recruit<span class="button-icon" aria-hidden="true"
             ><svg
               width="20"
               height="16"
